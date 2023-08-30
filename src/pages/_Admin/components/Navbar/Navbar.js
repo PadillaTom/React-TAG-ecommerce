@@ -22,10 +22,10 @@ const Navbar = () => {
 					width: "25%",
 				}}
 			>
-				<Link to="/React-TAG-ecommerce/admin">Admin Home</Link>
-				<Link to="/React-TAG-ecommerce/admin/user-admin">Users</Link>
-				<Link to="/React-TAG-ecommerce/admin/product-admin">Products</Link>
-				<Link to="/React-TAG-ecommerce">Website</Link>
+				<Link to="/admin">Admin Home</Link>
+				<Link to="/admin/user-admin">Users</Link>
+				<Link to="/admin/product-admin">Products</Link>
+				<Link to="/">Website</Link>
 			</ul>
 		</nav>
 	);

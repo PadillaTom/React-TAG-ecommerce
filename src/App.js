@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import { About, Homepage } from "./pages/_Website";
 import { AdminLayout } from "./pages/_Admin";
@@ -11,21 +11,15 @@ import {
 
 function App() {
 	return (
-		<Router>
+		<Router basename="/">
 			<Routes>
 				{/* Website Routes */}
-				<Route
-					path="/React-TAG-ecommerce/"
-					element={<Homepage></Homepage>}
-				></Route>
-				<Route
-					path="/React-TAG-ecommerce/about-us"
-					element={<About></About>}
-				></Route>
+				<Route path="/" element={<Homepage></Homepage>}></Route>
+				<Route path="/about-us" element={<About></About>}></Route>
 
 				{/* Admin Routes */}
 				<Route
-					path="/React-TAG-ecommerce/admin"
+					path="/admin"
 					element={
 						<AdminLayout
 							childPage={<AdminHomepage></AdminHomepage>}
@@ -33,7 +27,7 @@ function App() {
 					}
 				></Route>
 				<Route
-					path="/React-TAG-ecommerce/admin/user-admin"
+					path="/admin/user-admin"
 					element={
 						<AdminLayout
 							childPage={<UserAdministration></UserAdministration>}
@@ -41,7 +35,7 @@ function App() {
 					}
 				></Route>
 				<Route
-					path="/React-TAG-ecommerce/admin/product-admin"
+					path="/admin/product-admin"
 					element={
 						<AdminLayout
 							childPage={<ProductAdministration></ProductAdministration>}
