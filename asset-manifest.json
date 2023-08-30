@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/React-TAG-ecommerce/static/css/main.3ebf4995.css",
-    "main.js": "/React-TAG-ecommerce/static/js/main.a3279a46.js",
+    "main.js": "/React-TAG-ecommerce/static/js/main.b66e5036.js",
     "index.html": "/React-TAG-ecommerce/index.html",
     "main.3ebf4995.css.map": "/React-TAG-ecommerce/static/css/main.3ebf4995.css.map",
-    "main.a3279a46.js.map": "/React-TAG-ecommerce/static/js/main.a3279a46.js.map"
+    "main.b66e5036.js.map": "/React-TAG-ecommerce/static/js/main.b66e5036.js.map"
   },
   "entrypoints": [
     "static/css/main.3ebf4995.css",
-    "static/js/main.a3279a46.js"
+    "static/js/main.b66e5036.js"
   ]
 }
