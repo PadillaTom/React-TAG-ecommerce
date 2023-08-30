@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Homepage } from "./pages/_Website";
+import { About, Homepage } from "./pages/_Website";
 import { AdminLayout } from "./pages/_Admin";
 import {
 	AdminHomepage,
@@ -18,6 +18,11 @@ function App() {
 					path="/React-TAG-ecommerce/"
 					element={<Homepage></Homepage>}
 				></Route>
+				<Route
+					path="/React-TAG-ecommerce/about-us"
+					element={<About></About>}
+				></Route>
+
 				{/* Admin Routes */}
 				<Route
 					path="/React-TAG-ecommerce/admin"
